@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+section {
+    min-height: 100vh;
+}
+
+.bg-main {
+    background: linear-gradient(90deg, #161c2d 0, rgba(22, 28, 45, .75) 25%, rgba(22, 28, 45, .5) 50%, rgba(22, 28, 45, .25) 75%, rgba(22, 28, 45, 0)),
+        url("./src/images/bg-main.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-main-secondary {
+    background: url("./src/images/bg-main-secondary.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bg-team {
+    background: linear-gradient(rgba(22, 28, 45, 0.4), rgba(22, 28, 45, 0.8)), url("./src/images/bg-team.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
