@@ -11,14 +11,14 @@ section {
 
 .bg-main {
     background: linear-gradient(90deg, #161c2d 0, rgba(22, 28, 45, .75) 25%, rgba(22, 28, 45, .5) 50%, rgba(22, 28, 45, .25) 75%, rgba(22, 28, 45, 0)),
-        url("./images/bg-main.jpg");
+        url("/images/bg-main.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .bg-main-secondary {
-    background: url("./images/bg-main-secondary.png");
+    background: url("/images/bg-main-secondary.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,7 +26,7 @@ section {
 }
 
 .bg-team {
-    background: linear-gradient(rgba(22, 28, 45, 0.4), rgba(22, 28, 45, 0.8)), url("./images/bg-team.png");
+    background: linear-gradient(rgba(22, 28, 45, 0.4), rgba(22, 28, 45, 0.8)), url("/images/bg-team.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
