@@ -3,7 +3,7 @@ import Modal from "../components/Modal";
 import VideoPlayer from "../components/VideoPlayer";
 import BtnGetStarted from "../components/BtnGetStarted";
 import Header from "../components/navigation/Header";
-import GalleryList from '../components/gallery/GalleryItem'
+import GalleryList from '../components/gallery/GalleryList'
 import { useContext } from "react";
 import { UtilsContext } from "../Context/ContextProvider";
 import PricingCardsList from "../components/PricingCardsList";
