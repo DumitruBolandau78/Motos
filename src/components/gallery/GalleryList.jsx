@@ -6,37 +6,37 @@ const GalleryList = ({ setIsModalOpenImage }) => {
         {
             title: 'Mockup Collection',
             desc: 'Branding',
-            dir: './src/images/gallery/gallery-1.jpg'
+            dir: './images/gallery/gallery-1.jpg'
         },
         {
             title: 'Mockup Collection',
             desc: 'Designing',
-            dir: './src/images/gallery/gallery-2.jpg'
+            dir: './images/gallery/gallery-2.jpg'
         },
         {
             title: 'Abstract Images',
             desc: 'Abstract',
-            dir: './src/images/gallery/gallery-3.jpg'
+            dir: './images/gallery/gallery-3.jpg'
         },
         {
             title: 'Yellow bg with Books',
             desc: 'Books',
-            dir: './src/images/gallery/gallery-4.jpg'
+            dir: './images/gallery/gallery-4.jpg'
         },
         {
             title: 'Company V-card',
             desc: 'V-card',
-            dir: './src/images/gallery/gallery-5.jpg'
+            dir: './images/gallery/gallery-5.jpg'
         },
         {
             title: 'Mockup box with paints',
             desc: 'Photography',
-            dir: './src/images/gallery/gallery-6.jpg'
+            dir: './images/gallery/gallery-6.jpg'
         },
         {
             title: 'Coffee cup',
             desc: 'Cups',
-            dir: './src/images/gallery/gallery-7.jpg'
+            dir: './images/gallery/gallery-7.jpg'
         },
         {
             title: 'Pen and article',

@@ -81,7 +81,7 @@ const Home = () => {
           </svg>
           <img
             className="max-h-[600px] object-cover object-center"
-            src="./src/images/main-section-womens.jpg"
+            src="./images/main-section-womens.jpg"
             alt="womens"
           />
         </div>
@@ -283,7 +283,7 @@ const Home = () => {
           <div>
             <img
               className="object-cover object-center min-h-[100vh]"
-              src="./src/images/section-features-collective.jpg"
+              src="./images/section-features-collective.jpg"
               alt="collective people"
             />
           </div>
