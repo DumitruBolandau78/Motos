@@ -8,6 +8,8 @@ import { useContext } from "react";
 import { UtilsContext } from "../Context/ContextProvider";
 import PricingCardsList from "../components/PricingCardsList";
 import EmployeeList from "../components/EmployeeList";
+import NewsList from "../components/NewsList";
+import Footer from "../components/navigation/Footer";
 
 const Home = () => {
   const [isModalOpenPlayer, setIsModalOpenPlayer] = useState(false);
@@ -332,25 +334,13 @@ const Home = () => {
             managing <br /> conversion centered tailwindcss html page.
           </p>
         </div>
-        <div className="max-w-screen-xl mx-auto mt-20 grid grid-cols-3 gap-6">
-          <div>
-            <div>
-              <img src="./src/images/news/news-1.jpg" alt="news" />
-            </div>
-            <div className="p-5">
-              <h3 className="font-menium text-lg">
-                Building Your Corporate Identity from Motos
-              </h3>
-              <p className="text-gray-500">
-                The most well-known dummy text is the 'Lorem Ipsum', in the 16th
-                century.
-              </p>
-            </div>
-          </div>
+        <div className="max-w-screen-xl mx-auto mt-20 grid grid-cols-3 gap-8 text-start">
+          <NewsList />
         </div>
       </section>
+      <Footer />
       {isModalOpenPlayer && (<Modal closeModalHandler={closeModalHandler}><VideoPlayer childRef={childRef} /></Modal>)}
-      {isModalOpenImage && (<Modal closeModalHandler={closeModalHandler}></Modal>)}
+      {isModalOpenImage && (<Modal closeModalHandler={closeModalHandler}><img className='max-w-[700px] w-full' ref={childRef} src={url} alt="gallery-image" /></Modal>)}
     </div>
   );
 };

@@ -1,18 +1,14 @@
 import './App.css';
-
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/home';
-import CorporateIdentity from './pages/corporateIdentity';
+import CorporateIdentity from './pages/NewsPage';
 
 function App() {
  
-
-  
-
   return (
     <Routes>
       <Route path='/' element={<Home />} />
-      <Route path='/news/corporate-identity' element={<CorporateIdentity />} />
+      <Route path='/news/:id' element={<CorporateIdentity />} />
     </Routes>
   )
 }
