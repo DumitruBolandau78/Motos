@@ -10,10 +10,12 @@ import PricingCardsList from "../components/PricingCardsList";
 import EmployeeList from "../components/EmployeeList";
 import NewsList from "../components/NewsList";
 import Footer from "../components/navigation/Footer";
+import ContactForm from "../components/ContactForm/ContactForm";
 
 const HomePage = () => {
   const [isModalOpenPlayer, setIsModalOpenPlayer] = useState(false);
   const [isModalOpenImage, setIsModalOpenImage] = useState(false);
+  const { isModalOpenContact, setIsModalOpenContact } = useContext(UtilsContext);
   const { url } = useContext(UtilsContext);
 
   const childRef = useRef(null);
@@ -22,6 +24,7 @@ const HomePage = () => {
     if (childRef.current && !childRef.current.contains(event.target)) {
       setIsModalOpenPlayer(false);
       setIsModalOpenImage(false);
+      setIsModalOpenContact(false);
     }
   }
 
@@ -341,6 +344,7 @@ const HomePage = () => {
       <Footer />
       {isModalOpenPlayer && (<Modal closeModalHandler={closeModalHandler}><VideoPlayer childRef={childRef} /></Modal>)}
       {isModalOpenImage && (<Modal closeModalHandler={closeModalHandler}><img className='max-w-[700px] w-full' ref={childRef} src={url} alt="gallery-image" /></Modal>)}
+      {isModalOpenContact && (<Modal closeModalHandler={closeModalHandler}><ContactForm childRef={childRef} /></Modal>)}
     </div>
   );
 };
