@@ -11,7 +11,7 @@ import EmployeeList from "../components/EmployeeList";
 import NewsList from "../components/NewsList";
 import Footer from "../components/navigation/Footer";
 
-const Home = () => {
+const HomePage = () => {
   const [isModalOpenPlayer, setIsModalOpenPlayer] = useState(false);
   const [isModalOpenImage, setIsModalOpenImage] = useState(false);
   const { url } = useContext(UtilsContext);
@@ -345,4 +345,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
