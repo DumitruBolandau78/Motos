@@ -8,8 +8,9 @@ const ContactForm = ({ childRef }) => {
 	const [phone, setPhone] = useState('');
 	const [message, setMessage] = useState('');
 
-	async function submitHandler(){
-		await fetch('http://localhost:7000/send-email', {
+	async function submitHandler(e){
+		e.preventDefault();
+		await fetch('https://send-email-api-lyart.vercel.app/send-email', {
 			method: 'POST',
       body: JSON.stringify({ name, email, phone, message }),
       headers: {
@@ -18,6 +19,10 @@ const ContactForm = ({ childRef }) => {
     })
     .then(res => res.json())
     .then(data => {
+			setName('');
+			setEmail('');
+			setPhone('');
+			setMessage('');
 			console.log(data);
     })
     .catch(err => console.error(err))
