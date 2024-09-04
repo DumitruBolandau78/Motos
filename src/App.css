@@ -10,10 +10,6 @@ header, footer {
     padding-right: 1rem;
 }
 
-section {
-    min-height: 100vh;
-}
-
 .bg-main {
     background: linear-gradient(90deg, #161c2d 0, rgba(22, 28, 45, .75) 25%, rgba(22, 28, 45, .5) 50%, rgba(22, 28, 45, .25) 75%, rgba(22, 28, 45, 0)),
         url("/images/bg-main.jpg");

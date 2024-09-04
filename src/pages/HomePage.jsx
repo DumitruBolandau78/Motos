@@ -32,7 +32,7 @@ const HomePage = () => {
     <div>
       <Header />
       <section id="main" className="bg-main flex items-center">
-        <div className="max-w-screen-xl mx-auto w-full px-4">
+        <div className="max-w-screen-xl mx-auto w-full px-4 py-[150px]">
           <h2 className="text-5xl mb-10 text-white font-medium leading-[4rem]">
             Bluid your audiance <br /> and sale more
           </h2>
@@ -177,7 +177,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="bg-gray-100" id="features">
+      <section className="bg-gray-100 py-[100px]" id="features">
         <div className="grid lg:grid-cols-2 items-center">
           <div className="p-10">
             <h2 className="font-medium text-3xl mb-4">Our Features</h2>
