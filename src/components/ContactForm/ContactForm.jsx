@@ -8,25 +8,24 @@ const ContactForm = ({ childRef }) => {
 	const [phone, setPhone] = useState('');
 	const [message, setMessage] = useState('');
 
-	async function submitHandler(e){
+	async function submitHandler(e) {
 		e.preventDefault();
-		await fetch('https://send-email-api-lyart.vercel.app/send-email', {
+		await fetch('https://send-email-api-two.vercel.app/send-email', {
+			withCredentials: true,    
+      crossorigin: true,    
+      // mode: 'no-cors', 
 			method: 'POST',
-      body: JSON.stringify({ name, email, phone, message }),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-    .then(res => res.json())
-    .then(data => {
-			setName('');
-			setEmail('');
-			setPhone('');
-			setMessage('');
-			console.log(data);
-    })
-    .catch(err => console.error(err))
-      
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify({ name, email, phone, message })
+		})
+			.then(res => res.json())
+			.then(data => {
+				console.log(data);
+			})
+			.catch(err => console.error(err))
+
 	}
 
 	return (
