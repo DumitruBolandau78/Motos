@@ -30,7 +30,7 @@ const ContactForm = ({ childRef }) => {
 	return (
 		<div className="contact-form" ref={childRef}>
 			<div className="container flex justify-center items-center">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 563" fill="none">
+				<svg className='max-[800px]:hidden' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 563" fill="none">
 					<g id="Image">
 						<g id="g14">
 							<g id="g16">
@@ -326,7 +326,7 @@ const ContactForm = ({ childRef }) => {
 					</g>
 				</svg>
 
-				<form onSubmit={submitHandler}>
+				<form className='min-w-[25rem] max-[410px]:min-w-[20rem]' onSubmit={submitHandler}>
 					<h2 className="title text-center mb-10 text-white">Talk to Us</h2>
 					<div className="form-group relative">
 						<label htmlFor="formName" className="block">

@@ -15,7 +15,7 @@ const Header = () => {
         </nav>
         <div className="icon burger cursor-pointer lg:hidden flex fixed top-2 right-2">
           <nav className={`${isNavOpen ? 'right-0' : 'right-[-100%]'} fixed text-2xl top-0 pt-[70px] duration-300 bg-green-500 max-w-[500px] w-full min-h-[100vh] flex items-center justify-center flex-col`}>
-            <HeaderLinkList direction={'flex-col'} gap={'gap-3'} />
+            <HeaderLinkList setItsNavOpen={setItsNavOpen} direction={'flex-col'} gap={'gap-3'} />
           </nav>
           <svg onClick={() => setItsNavOpen(!isNavOpen)} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="text-white size-10 z-20">
             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
