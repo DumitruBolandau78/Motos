@@ -41,7 +41,7 @@ const GalleryList = ({ setIsModalOpenImage }) => {
         {
             title: 'Pen and article',
             desc: 'Article',
-            dir: './src/images/gallery/gallery-8.jpg'
+            dir: './images/gallery/gallery-8.jpg'
         }
     ];
   return (

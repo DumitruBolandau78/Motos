@@ -1,7 +1,7 @@
 // eslint-disable-next-line react/prop-types
 const Employee = ({ urlImg, name, role }) => {
   return (
-    <div className="flex flex-col shadow-md">
+    <div className="flex flex-col shadow-md items-center">
       <div className="overflow-hidden">
         <img className="hover:scale-[1.1] transition ease duration-300" src={urlImg} alt="employee" />
       </div>

@@ -25,7 +25,7 @@ const EmployeeList = () => {
     ]
 
   return (
-    <div className="grid grid-cols-4 gap-6 mt-16">
+    <div className="grid sm:grid-cols-2 grid-cols-1 md:grid-cols-4 gap-6 mt-16">
         { employees.map((emp, i) => <Employee key={i} {...emp} />) }
     </div>
   )

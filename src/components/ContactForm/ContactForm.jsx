@@ -13,7 +13,6 @@ const ContactForm = ({ childRef }) => {
 		await fetch('https://send-email-api-two.vercel.app/send-email', {
 			withCredentials: true,    
       crossorigin: true,    
-      // mode: 'no-cors', 
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'

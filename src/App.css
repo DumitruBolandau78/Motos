@@ -5,6 +5,11 @@
     scroll-behavior: smooth;
 }
 
+header, footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 section {
     min-height: 100vh;
 }

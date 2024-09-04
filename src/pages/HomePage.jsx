@@ -32,15 +32,15 @@ const HomePage = () => {
     <div>
       <Header />
       <section id="main" className="bg-main flex items-center">
-        <div className="max-w-screen-xl mx-auto w-full">
+        <div className="max-w-screen-xl mx-auto w-full px-4">
           <h2 className="text-5xl mb-10 text-white font-medium leading-[4rem]">
             Bluid your audiance <br /> and sale more
           </h2>
           <p className="text-2xl text-gray-400 leading-10">
-            Launch your campaign and benefit from our expertise on designing{" "}
+            Launch your campaign and benefit from our expertise on designing
             <br /> and managing conversion centered tailwindcss html page.
           </p>
-          <div className="mt-8 flex items-center gap-5">
+          <div className="mt-8 flex items-center gap-5 max-[370px]:flex-col max-[370px]:items-start">
             <BtnGetStarted />
             <div
               className="flex items-center gap-4 text-gray-400 cursor-pointer"
@@ -65,8 +65,8 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="bg-main-secondary max-w-screen-xl mx-auto grid grid-cols-5 py-[6rem] gap-3">
-        <div className="col-span-2 relative">
+      <section className="bg-main-secondary max-w-screen-xl mx-auto grid grid-cols-5 py-[6rem] gap-3 sm:container lg:px-3">
+        <div className="lg:col-span-2 relative self-center justify-self-center col-span-5 lg:order-1 order-2">
           <svg
             onClick={() => setIsModalOpenPlayer(true)}
             className="size-20 cursor-pointer text-green-500 -translate-x-1/2 -translate-y-1/2 top-[50%] left-[50%] absolute rounded-full p-1 ps-3 bg-white flex items-center justify-center"
@@ -83,12 +83,12 @@ const HomePage = () => {
             />
           </svg>
           <img
-            className="max-h-[600px] object-cover object-center"
+            className="lg:max-h-[600px] w-full object-cover object-center"
             src="./images/main-section-womens.jpg"
             alt="womens"
           />
         </div>
-        <div className="col-span-3 flex flex-col justify-center p-12">
+        <div className="lg:col-span-3 col-span-5 flex flex-col justify-center p-12 order-1  lg:order-2">
           <h2 className="font-medium text-4xl mb-8 leading-[3.5rem]">
             Right Solutions Give You A <br />
             Hassle Free Business
@@ -178,15 +178,15 @@ const HomePage = () => {
         </div>
       </section>
       <section className="bg-gray-100" id="features">
-        <div className="grid grid-cols-2 items-center">
+        <div className="grid lg:grid-cols-2 items-center">
           <div className="p-10">
             <h2 className="font-medium text-3xl mb-4">Our Features</h2>
             <p className="text-xl text-gray-600">
               Launch your campaign and benefit from our expertise on designing
               and managing conversion centered tailwindcss html page.
             </p>
-            <div className="grid gap-10 grid-cols-2 mt-10 ">
-              <div className="feature">
+            <div className="grid gap-10 grid-cols-1 mt-10 sm:grid-cols-2">
+              <div className="feature shadow-md p-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -206,7 +206,7 @@ const HomePage = () => {
                   Horem ipsum dolor consectetuer Lorem simply dummy orem commo.
                 </p>
               </div>
-              <div className="feature">
+              <div className="feature shadow-md p-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -227,7 +227,7 @@ const HomePage = () => {
                   it.
                 </p>
               </div>
-              <div className="feature">
+              <div className="feature shadow-md p-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -253,7 +253,7 @@ const HomePage = () => {
                   typesetting.
                 </p>
               </div>
-              <div className="feature">
+              <div className="feature shadow-md p-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -293,9 +293,7 @@ const HomePage = () => {
         </div>
       </section>
       <section
-        id="projects"
-        className="max-w-screen-2xl mx-auto py-[80px] font-medium"
-      >
+        id="projects" className="max-w-screen-2xl mx-auto py-[80px] font-medium px-2">
         <h2 className="text-center text-4xl">Our Works & Projects</h2>
         <p className="text-lg text-center text-gray-500 mt-8 font-normal">
           Launch your campaign and benefit from our expertise on designing and
@@ -303,7 +301,7 @@ const HomePage = () => {
         </p>
         <GalleryList setIsModalOpenImage={setIsModalOpenImage} />
       </section>
-      <section id="pricing" className="bg-gray-100 py-[80px]">
+      <section id="pricing" className="bg-gray-100 py-[80px] px-5">
         <h2 className="text-center text-4xl font-medium">Pricing Plans</h2>
         <p className="text-lg text-center text-gray-500 mt-8 font-normal">
           Launch your campaign and benefit from our expertise on designing and
@@ -311,7 +309,7 @@ const HomePage = () => {
         </p>
         <PricingCardsList />
       </section>
-      <div className="bg-team py-28 flex flex-col justify-center items-center text-center gap-5">
+      <div className="bg-team py-28 flex flex-col justify-center items-center text-center gap-5 px-2 text-pretty">
         <h2 className="text-4xl text-white font-medium">
           Ready to start your next web project now?
         </h2>
@@ -321,7 +319,7 @@ const HomePage = () => {
         </div>
         <BtnGetStarted />
       </div>
-      <section id="team" className="text-center py-24 max-w-screen-xl mx-auto">
+      <section id="team" className="text-center py-24 max-w-screen-xl mx-auto px-3">
         <h2 className="text-3xl font-medium">Our Mind Power</h2>
         <p className="text-gray-500 mt-5 text-lg">
           Launch your campaign and benefit from our expertise on designing and
@@ -337,7 +335,7 @@ const HomePage = () => {
             managing <br /> conversion centered tailwindcss html page.
           </p>
         </div>
-        <div className="max-w-screen-xl mx-auto mt-20 grid grid-cols-3 gap-8 text-start">
+        <div className="max-w-screen-xl mx-auto mt-20 flex justify-center md:flex-nowrap flex-wrap px-3 gap-8 text-start">
           <NewsList />
         </div>
       </section>

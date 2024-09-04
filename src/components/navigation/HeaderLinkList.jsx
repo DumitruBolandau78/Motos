@@ -1,7 +1,8 @@
 import { useState, useContext } from "react";
 import { UtilsContext } from "../../Context/ContextProvider";
 
-const HeaderLinkList = () => {
+// eslint-disable-next-line react/prop-types
+const HeaderLinkList = ({ direction, gap }) => {
   const [activeTab, setActiveTab] = useState('home');
   const activeLink = 'uppercase text-white';
   const inactiveLink = 'uppercase text-gray-500';
@@ -13,7 +14,7 @@ const HeaderLinkList = () => {
 
   return (
     <>
-      <ul className='flex items-center gap-7 font-medium'>
+      <ul className={'font-medium flex ' + direction + ' ' + gap}>
         <li><a onClick={activeLinkHandler} className={activeTab === 'Home'.toLowerCase() ? activeLink : inactiveLink} href={'#main'}>Home</a></li>
         <li><a onClick={activeLinkHandler} className={activeTab === 'features'.toLowerCase() ? activeLink : inactiveLink} href={'#features'}>features</a></li>
         <li><a onClick={activeLinkHandler} className={activeTab === 'projects'.toLowerCase() ? activeLink : inactiveLink} href={'#projects'}>projects</a></li>
