@@ -10,7 +10,7 @@ const ContactForm = ({ childRef }) => {
 
 	async function submitHandler(e) {
 		e.preventDefault();
-		await fetch('https://send-email-api-two.vercel.app/send-email', {
+		await fetch('https://send-email-api-tau.vercel.app/send-email', {
 			withCredentials: true,    
       crossorigin: true,    
 			method: 'POST',
